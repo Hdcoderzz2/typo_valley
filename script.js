@@ -70,7 +70,6 @@ function typo(){
     if(current_key=="HD"){
         alert("HD does not make typos.");
     }else{
-    document.body.style.overflowX="hidden";
     document.getElementById("s1").style.display="none";
     document.getElementById("s2").style.display="block";
     document.getElementById("s1").style.opacity="0";
