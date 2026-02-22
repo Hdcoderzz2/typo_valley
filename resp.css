@@ -1,0 +1,116 @@
+@media screen and (max-width:800px){
+    div#pfp{
+        height:130px;
+        width:130px;
+    }
+    div#info h1{
+        font-size: 1.5em;
+    }
+    button.left{
+         border-top: 11px solid transparent;   /* Top side */
+        border-bottom: 11px solid transparent;/* Bottom side */
+        border-right: 11px solid white;
+    }
+    button.right{
+         border-top: 11px solid transparent;   /* Top side */
+        border-bottom: 11px solid transparent;/* Bottom side */
+        border-left: 11px solid white;
+    }
+}
+@media  screen and (max-width:520px) {
+    div#typo_title{
+        grid-template-columns: 10% 90%;
+    }
+}
+@media screen and (max-width:600px){
+    div#pfp{
+        height:100px;
+        width:100px;
+    }
+    div#info h1{
+        font-size: 1.1em;
+    }
+    button.typos{
+        font-size: 1em;
+        width:80%;
+    }
+}
+@media screen and (max-width:450px){
+    div#pfp{
+        height:80px;
+        width:80px;
+    }
+    div#info h1{
+        font-size: 1em;
+    }
+    button.typos{
+        font-size: 0.8em;
+        width:80%;
+    }
+    button.left{
+         border-top: 11px solid transparent;   /* Top side */
+        border-bottom: 11px solid transparent;/* Bottom side */
+        border-right: 11px solid white;
+    }
+    button.right{
+         border-top: 11px solid transparent;   /* Top side */
+        border-bottom: 11px solid transparent;/* Bottom side */
+        border-left: 11px solid white;
+    }
+}
+/*@media screen and (min-height:1000px) {
+    div#typo_title{
+        height:12vh;
+    }
+}
+@media screen and (max-height:1000px) {
+    div#typo_title{
+        height:14vh;
+    }
+}
+@media screen and (max-height:730px) {
+    div#typo_title{
+        height:20vh;
+    }
+}
+@media screen and (max-height:520px) {
+    div#typo_title{
+        height:25vh;
+    }
+}
+*/
+@media screen and (max-height:520px) {
+    div#typo_title{
+        height:15vh;
+    }
+}
+@media screen and (max-height:410px) {
+    div#typo_title{
+        height:18vh;
+    }
+}
+@media screen and (max-height:345px) {
+    div#typo_title{
+        height:22vh;
+    }
+}
+@media  screen and (max-height:630px) {
+    div#nc{
+        height:50vh;
+    }
+}
+@media  screen and (max-height:530px) {
+    div#nc{
+        height:60vh;
+    }
+}
+@media  screen and (max-height:462px) {
+    div#nc{
+        height:70vh;
+    }
+}
+@media  screen and (max-height:405px) {
+    div#nc{
+        height:80vh;
+    }
+}

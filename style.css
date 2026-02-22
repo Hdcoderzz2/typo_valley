@@ -1,0 +1,197 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section,html,body{
+    height:100%;
+    margin:0;
+    touch-action: manipulation;
+    width: 100%;
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://images.pexels.com/photos/414727/pexels-photo-414727.jpeg?cs=srgb&dl=pexels-pixabay-414727.jpg&fm=jpg');
+}
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#s1{
+    user-select: none;
+    display: flex;
+    opacity:1;
+    justify-content: center;
+    transition: opacity 0.5s;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-image: transparent;
+}
+div#nc{
+    height:43vh;
+    color:white;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.34);
+    transition: opacity 0.5s;
+    width:70vw;
+    outline: 2px groove white;
+    border-radius: 10px;
+    display: grid;
+    grid-template:80% 20% / 40% 60%;
+    gap:4px;
+}
+div#nc h1{
+    justify-self: center;
+    align-self: center;
+}
+div#pfp{
+    height:150px;
+    width:150px;
+    aspect-ratio: 1/1;
+    min-height:80px;
+    min-width: 80px;
+    background-color: grey;
+    align-self: center;
+    justify-self: center;
+    outline: 2px solid white;
+    border-radius: 100%;
+}
+div#info{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    row-gap: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    border-left: 2px dotted white;
+}
+button{
+    cursor: pointer;
+    border:none;
+    background-color: transparent;
+}
+button:disabled{
+    opacity:0.4;
+}
+    
+div#controls{
+    grid-column: 1/ span 2;
+    display:grid;
+    overflow: hidden;
+    grid-template-columns: 15% 70% 15%;
+    column-gap:5px;
+    height: 80%;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid grey;
+    width:100%;
+}
+p#text1{
+    font-size: 1.4em;
+    font-weight: bold;
+    color:white;
+    justify-self: center;
+    text-align: center;
+    font-family: monospace;
+}
+button.right{
+    width: 0;
+    height: 0;
+    padding-right: 20px;
+    justify-self: right;
+    align-self: center;
+    border-top: 16px solid transparent;   /* Top side */
+    border-bottom: 16px solid transparent;/* Bottom side */
+    border-left: 16px solid white;
+}
+button.left{
+    width: 0;
+    align-self: center;
+    height: 0;
+    border-top: 16px solid transparent; /* Transparent top border */
+    border-bottom: 16px solid transparent; /* Transparent bottom border */
+    border-right: 16px solid white; /* Solid right border for the triangle */
+}
+button.left2{
+    width: 0;
+    align-self: center;
+    height: 0;
+    border-top: 15px solid transparent; /* Transparent top border */
+    border-bottom: 15px solid transparent; /* Transparent bottom border */
+    border-right: 15px solid white; /* Solid right border for the triangle */
+}
+button.typos{
+    height:40px;
+    width:60%;
+    font-size: 1.2em;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    color:white;
+    align-self: center;
+    justify-self: center;
+}
+section#s2{
+    background-color: black;
+    box-sizing: border-box;
+    overflow-y: auto;
+    opacity:0;
+    transition: opacity 0.5s;
+    overflow-x: none;
+}
+div#typo_title{
+    height:12vh;
+    width:100vw;
+    left:0;
+    top:0;
+    background-color: dodgerblue;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 5% 95%;
+    column-gap: 5px;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    color:white;
+    box-shadow: 1px 1px 20px grey;
+}
+div#typo_title h1{
+    font-size:1.8em;
+    user-select: none;
+}
+div#typo_list{
+    height:auto;
+    width:100vw;
+    border-bottom: 3px dotted grey;
+    position: relative;
+    color:white;
+    box-sizing: border-box;
+}
+div.list_item{
+    min-height:30px;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    column-gap:10px;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    width:100%;
+    border-top:2px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+}
+div.list_item p{
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.jtm{
+    height:fit-content;
+    width:fit-content;
+    user-select: none;
+    padding:10px;
+    background-color: rgb(35, 123, 255);
+    color:white;
+    aspect-ratio: 1/1;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+}

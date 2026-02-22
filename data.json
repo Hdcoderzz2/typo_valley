@@ -1,0 +1,16 @@
+{
+    "Sakshi":{
+        "pfp":"sakshi.png",
+        "typos":[
+            {"typo":"Carefup","url":"images/ss1.png"},
+            {"typo":"Dony","url":"images/ss2.png"},
+            {"typo":"Bekubord","url":"images/ss3.png"}
+        ]
+    },
+    "HD":{
+        "pfp":"HD.jpeg",
+        "typos":[
+            {"typo":"#","url":"#"}
+        ]
+    }
+}
