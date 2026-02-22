@@ -4,7 +4,7 @@
 section,html,body{
     height:100%;
     margin:0;
-    touch-action: manipulation;
+   /* touch-action: manipulation;*/
     width: 100%;
 }
 body{
@@ -199,4 +199,5 @@ button.jtm{
     align-self: center;
     justify-self: left;
     border-radius: 10px;
+
 }
