@@ -45,9 +45,10 @@ function right(){
     counter++;
     cn();
     current_key=Object.keys(data[0])[counter];
+    setTimeout(()=>{
     pfp();
     document.getElementById("name").innerHTML=current_key;
-    text();
+    text()},500);
 }
 function left(){
     let lb=document.getElementById("lf");
@@ -61,15 +62,15 @@ function left(){
     counter--;
     cn();
     current_key=Object.keys(data[0])[counter];
-    pfp();
+    setTimeout(()=>{pfp();
     document.getElementById("name").innerHTML=current_key;
-    text();
+    text()},500);
 }
 function typo(){
     if(current_key=="HD"){
         alert("HD does not make typos.");
     }else{
-    document.body.style.overflowX="none";
+    document.body.style.overflowX="hidden";
     document.getElementById("s1").style.display="none";
     document.getElementById("s2").style.display="block";
     document.getElementById("s1").style.opacity="0";
